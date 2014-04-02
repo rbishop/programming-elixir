@@ -14,4 +14,4 @@ defmodule Parallel do
   end
 end
 
-Parallel.pmap 1..1000, &(&1 * &1)
+Parallel.pmap 1..5000, &(&1 * &1)

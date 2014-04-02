@@ -7,10 +7,4 @@ end
 
 fizz_buzz_rem = fn (num) -> fizz_buzz.(rem(num,3), rem(num, 5), num) end
 
-IO.puts fizz_buzz_rem.(10)
-IO.puts fizz_buzz_rem.(11)
-IO.puts fizz_buzz_rem.(12)
-IO.puts fizz_buzz_rem.(13)
-IO.puts fizz_buzz_rem.(14)
-IO.puts fizz_buzz_rem.(15)
-IO.puts fizz_buzz_rem.(16)
+Enum.map 1..100, &(IO.puts fizz_buzz_rem.(&1))
