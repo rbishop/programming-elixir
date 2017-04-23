@@ -1,7 +1,7 @@
 defmodule Chop do
   def guess(actual, lower..upper) do
     number = div(upper + lower, 2)
-    IO.puts "Is it #{number}"
+    IO.puts "Is it #{number}?"
     make_guess(number, actual, lower..upper)
   end
 
