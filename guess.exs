@@ -5,7 +5,7 @@ defmodule Chop do
     make_guess(number, actual, lower..upper)
   end
 
-  def make_guess(number, actual, _) when number == actual do
+  def make_guess(number, number, _) do
     IO.puts "Nailed it!"
   end
 
