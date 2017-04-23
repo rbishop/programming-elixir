@@ -14,7 +14,7 @@ defmodule Chop do
   end
 
   def make_guess(number, actual, _..upper) when number < actual do
-    guess(actual, number..upper)
+    guess(actual, (number + 1)..upper)
   end
 end
 
